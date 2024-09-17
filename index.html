@@ -23,11 +23,7 @@
       id="scene"
     >
       <a-assets>
-        <a-asset-item
-          id="bowser"
-          src="burger.glb"
-        >
-        </a-asset-item>
+        <video id="frog-video" autoplay loop="true" src="frog.mp4"></video>
       </a-assets>
 
       <a-marker
@@ -38,15 +34,7 @@
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
       >
-        <a-entity
-          id="bowser-model"
-          gltf-model="#bowser"
-          position="0 0 0"
-          scale="1 1 1"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
+        <a-video src="#frog-video" rotation="-90 0 0"></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
